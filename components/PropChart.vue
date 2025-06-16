@@ -9,10 +9,12 @@
         :y-axis-label="'Anzahl der Würfe'"
         :x-axis-label-formatter="xAxisFormatter"
         :y-axis-label-formatter="yAxisFormatter"
+        :curve-type="CurveType.Linear"
     />
 </template>
 
 <script setup lang="ts">
+import { CurveType } from "@unovis/ts"
 import CustomChartTooltip from "@/components/ui/chart/ChartTooltip.vue"
 import { LineChart } from "@/components/ui/chart-line"
 
