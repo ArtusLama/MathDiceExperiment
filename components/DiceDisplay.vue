@@ -2,7 +2,7 @@
     <Icon
         v-if="diceNumber >= 1 && diceNumber <= 6"
         :name="iconMap[diceNumber]"
-        class="text-4xl text-black"
+        class="text-4xl"
         :size="28"
     />
     <span
