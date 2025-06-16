@@ -1,23 +1,28 @@
 <template>
-    <UiNumberField
-        v-model="runPerClick"
-        :min="1"
-        :format-options="{
-            useGrouping: false,
-        }"
-    >
-        <UiNumberFieldContent>
-            <UiNumberFieldDecrement />
-            <UiNumberFieldInput />
-            <UiNumberFieldIncrement />
-        </UiNumberFieldContent>
-    </UiNumberField>
-    <UiButton
-        @click="runExperiment"
-    >
-        <Icon name="lucide:dices" />
-        Würfeln
-    </UiButton>
+    <div class="flex flex-col gap-4">
+        <p class="text-center font-semibold text-lg">
+            Würfeln:
+        </p>
+        <UiNumberField
+            v-model="runPerClick"
+            :min="1"
+            :format-options="{
+                useGrouping: false,
+            }"
+        >
+            <UiNumberFieldContent>
+                <UiNumberFieldDecrement />
+                <UiNumberFieldInput />
+                <UiNumberFieldIncrement />
+            </UiNumberFieldContent>
+        </UiNumberField>
+        <UiButton
+            @click="runExperiment"
+        >
+            <Icon name="lucide:dices" />
+            Würfeln
+        </UiButton>
+    </div>
 </template>
 
 <script lang="ts" setup>

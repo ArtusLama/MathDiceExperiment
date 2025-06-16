@@ -1,19 +1,25 @@
 <template>
-    <UiTable>
-        <UiTableCaption>Empirische Wahrscheinlichkeiten</UiTableCaption>
+    <UiTable class="max-w-2xl">
+        <UiTableCaption>(Empirische Wahrscheinlichkeiten)</UiTableCaption>
         <UiTableHeader>
             <UiTableRow>
+                <UiTableHead class="pr-8">
+                    Augenzahl
+                </UiTableHead>
                 <UiTableHead
                     v-for="outcome in useExperiment().outcomes"
                     :key="outcome"
                     class="text-center"
                 >
-                    {{ outcome }}
+                    <DiceDisplay :dice-number="outcome" />
                 </UiTableHead>
             </UiTableRow>
         </UiTableHeader>
         <UiTableBody>
             <UiTableRow>
+                <UiTableCell class="pr-8">
+                    Häufigkeit
+                </UiTableCell>
                 <UiTableCell
                     v-for="outcome in useExperiment().outcomes"
                     :key="outcome"
@@ -23,6 +29,9 @@
                 </UiTableCell>
             </UiTableRow>
             <UiTableRow>
+                <UiTableCell class="pr-8">
+                    Wahrscheinlichkeit
+                </UiTableCell>
                 <UiTableCell
                     v-for="outcome in useExperiment().outcomes"
                     :key="outcome"

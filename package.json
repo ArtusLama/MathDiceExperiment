@@ -16,6 +16,8 @@
     "@pinia/nuxt": "^0.11.1",
     "@tailwindcss/vite": "^4.1.8",
     "@tanstack/vue-table": "^8.21.3",
+    "@unovis/ts": "^1.5.2",
+    "@unovis/vue": "^1.5.2",
     "@vueuse/core": "^13.3.0",
     "@vueuse/nuxt": "^13.3.0",
     "class-variance-authority": "^0.7.1",

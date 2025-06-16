@@ -4,6 +4,7 @@
             <UiButton
                 variant="outline"
                 size="icon"
+                class="absolute top-5 right-5"
             >
                 <Icon
                     name="lucide:moon"
