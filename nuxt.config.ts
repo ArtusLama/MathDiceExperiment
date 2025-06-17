@@ -12,6 +12,12 @@ export default defineNuxtConfig({
     ],
     devtools: { enabled: true },
 
+    app: {
+        head: {
+            title: "Würfel-Experiment Simulation",
+        },
+    },
+
     css: ["~/assets/css/tailwind.css"],
     compatibilityDate: "2025-05-15",
     vite: {
