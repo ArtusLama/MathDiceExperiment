@@ -1,6 +1,6 @@
 <template>
-    <div class="space-y-32">
-        <p class="mt-16 text-4xl font-extrabold tracking-tight lg:text-5xl text-center">
+    <div class="space-y-32 py-32 w-full max-w-[60rem]">
+        <p class="text-4xl font-extrabold tracking-tight lg:text-5xl text-center">
             <Icon
                 name="lucide:dices"
                 class="mr-2"
@@ -9,20 +9,21 @@
         </p>
 
         <div class="flex justify-center gap-8 flex-wrap">
-            <div class=" flex flex-col gap-8">
+            <div class="flex flex-col gap-8">
                 <div class="bg-card text-card-foreground rounded-xl border shadow-sm px-6 py-4">
                     <RunExperiment />
                 </div>
                 <ResetButton />
             </div>
-            <div class="space-y-16 overflow-x-scroll">
+            <div class="overflow-x-scroll">
                 <PropTable />
-                <PropChart />
-                <DiffChart />
             </div>
         </div>
 
-        <div class="flex justify-center" />
+        <div class="space-y-8">
+            <PropChart />
+            <DiffChart />
+        </div>
     </div>
 </template>
 
