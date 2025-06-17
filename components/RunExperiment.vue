@@ -6,6 +6,7 @@
         <UiNumberField
             v-model="runPerClick"
             :min="1"
+            :max="1000"
             :format-options="{
                 useGrouping: false,
             }"
