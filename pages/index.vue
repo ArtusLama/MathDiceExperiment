@@ -1,6 +1,6 @@
 <template>
-    <div class="flex flex-col gap-32">
-        <p class="text-4xl font-extrabold tracking-tight lg:text-5xl text-center">
+    <div class="space-y-32">
+        <p class="mt-16 text-4xl font-extrabold tracking-tight lg:text-5xl text-center">
             <Icon
                 name="lucide:dices"
                 class="mr-2"
@@ -15,7 +15,7 @@
                 </div>
                 <ResetButton />
             </div>
-            <div class="space-y-16">
+            <div class="space-y-16 overflow-x-scroll">
                 <PropTable />
                 <PropChart />
             </div>
