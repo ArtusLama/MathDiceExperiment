@@ -18,6 +18,7 @@
             <div class="space-y-16 overflow-x-scroll">
                 <PropTable />
                 <PropChart />
+                <DiffChart />
             </div>
         </div>
 
