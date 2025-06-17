@@ -15,7 +15,7 @@
                 </div>
                 <ResetButton />
             </div>
-            <div class="overflow-x-scroll">
+            <div class="overflow-x-auto">
                 <PropTable />
             </div>
         </div>
